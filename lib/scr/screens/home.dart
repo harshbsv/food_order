@@ -1,4 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:foodorder/scr/widgets/categories.dart';
+import 'package:foodorder/scr/widgets/customtext.dart';
 class Home extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();
@@ -17,7 +20,7 @@ class _HomeState extends State<Home> {
               children: <Widget>[
                 Padding(
                   padding: const EdgeInsets.all(8),
-                  child: Text('What would you like to eat?', style: TextStyle(fontSize: 19, fontWeight: FontWeight.bold),),
+                  child: CustomText(text: 'What would you like to eat?', size: 19,),
                 ),
                 Stack(
                   children: <Widget>[
@@ -64,6 +67,10 @@ class _HomeState extends State<Home> {
                 ),
               ),
             ),
+            SizedBox(
+              height: 5,
+            ),
+            Categories(),
           ],
         ),
       ),

@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:foodorder/scr/models/category.dart';
-import 'customtext.dart';
+import '../../customtext.dart';
 
 List<Category> categoriesList = [
   Category(name: "Salad", image: "images/salad.png"),
+  Category(name: "Fruits", image: "images/fruit.png"),
   Category(name: "Fast Food", image: "images/sandwich.png"),
   Category(name: "Seafood", image: "images/fish.png"),
   Category(name: "Steak", image: "images/steak.png"),

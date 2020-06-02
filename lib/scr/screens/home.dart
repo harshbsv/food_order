@@ -1,7 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:foodorder/customtext.dart';
 import 'package:foodorder/scr/widgets/categories.dart';
-import 'package:foodorder/scr/widgets/customtext.dart';
+import 'package:foodorder/scr/widgets/featured_product.dart';
+import 'package:foodorder/scr/widgets/popular_products.dart';
+
 class Home extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();
@@ -67,10 +70,42 @@ class _HomeState extends State<Home> {
                 ),
               ),
             ),
-            SizedBox(
-              height: 5,
-            ),
+            SizedBox(height: 5,),
             Categories(),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: CustomText(text: "Featured",),
+            ),
+            Featured(),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: CustomText(text: "Popular Products",),
+            ),
+            PopularProducts(),
+          ],
+        ),
+      ),
+      bottomNavigationBar: Container(
+        color: Colors.white,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: <Widget>[
+            Padding(
+              padding: const EdgeInsets.only(left: 28.0),
+              child: Image.asset("images/home.png", width: 26, height: 26,),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Image.asset("images/target.png", width: 26, height: 26,),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Image.asset("images/shoppingbag.png", width: 26, height: 26,),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(right: 28.0),
+              child: Image.asset("images/avatar.png", width: 26, height: 26,),
+            ),
           ],
         ),
       ),

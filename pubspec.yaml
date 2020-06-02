@@ -58,16 +58,25 @@ flutter:
   #   - images/a_dot_ham.jpeg
   assets:
     - images/avatar.png
+    - images/chickenbiryani.jpg
+    - images/chickentikka.jpg
     - images/fish.png
+    - images/fruit.png
     - images/home.png
     - images/icecream.png
+    - images/muttonbiryani.jpg
+    - images/nachos.jpg
+    - images/paneertikka.jpg
     - images/pasta.jpg
     - images/pint.png
     - images/salad.png
     - images/salmon.jpg
     - images/sandwich.png
+    - images/sauteedveggies.jpeg
     - images/shoppingbag.png
+    - images/steak.jpg
     - images/steak.png
+    - images/tacos.jpg
     - images/target.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
